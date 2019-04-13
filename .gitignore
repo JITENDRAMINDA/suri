@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+allowed.json
+chats.json
+config.json
+
+.idea/
