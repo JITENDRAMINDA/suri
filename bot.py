@@ -145,10 +145,11 @@ def handle(msg):
                 else:
                     bot.sendMessage(chat_id, "Failed to send a message only with tags which is not a reply to another message")
 
-bot = telepot.Bot(TOKEN)
+bot = telepot.Bot(BOT_TOKEN)
 
 MessageLoop(bot, handle).run_as_thread()
 print('Listening ...')
 # Keep the program running.
 while 1:
     time.sleep(10)
+client.run(str(os.environ.get('BOT_TOKEN')))
